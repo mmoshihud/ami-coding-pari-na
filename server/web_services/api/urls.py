@@ -1,5 +1,4 @@
 from django.urls import path
+from web_services.api.views import create_user
 
-from web_services.api.views import test
-
-urlpatterns = [path("test", test)]
+urlpatterns = [path("user", create_user)]
