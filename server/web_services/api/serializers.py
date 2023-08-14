@@ -1,6 +1,6 @@
-from rest_framework import serializers
 from django.contrib.auth.models import User
-from web_services.models import SearchValue
+from rest_framework import serializers
+from web_services.models import InputValue
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -20,7 +20,7 @@ class UserSerializer(serializers.ModelSerializer):
         return user
 
 
-class SearchValueSerializer(serializers.ModelSerializer):
+class InputValueSerializer(serializers.ModelSerializer):
     class Meta:
-        model = SearchValue
+        model = InputValue
         fields = "__all__"
