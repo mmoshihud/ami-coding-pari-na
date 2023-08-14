@@ -60,13 +60,14 @@ def khoj_the_search(request):
 
 @api_view(["GET"])
 def get_all_input_values(request):
-    start_datetime = request.query_params.get("start_datetime")
-    end_datetime = request.query_params.get("end_datetime")
-    user_id = request.query_params.get("user_id")
-    input_values = InputValue.objects.filter(
-        user_id=user_id, timestamp__gte=start_datetime, timestamp__lte=end_datetime
-    )
-    serialized_values = InputValueSerializer(input_values, many=True).data
-    return Response(
-        {"status": "success", "user_id": user_id, "payload": serialized_values}
-    )
+    if request.method == "GET":
+        start_datetime = request.query_params.get("start_datetime")
+        end_datetime = request.query_params.get("end_datetime")
+        user_id = request.query_params.get("user_id")
+        input_values = InputValue.objects.filter(
+            user_id=user_id, timestamp__gte=start_datetime, timestamp__lte=end_datetime
+        )
+        serialized_values = InputValueSerializer(input_values, many=True).data
+        return Response(
+            {"status": "success", "user_id": user_id, "payload": serialized_values}
+        )
