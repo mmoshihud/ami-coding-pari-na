@@ -19,8 +19,8 @@ def create_user(request):
                 "user": serializer.data,
                 "token": token.key,
             }
-            return Response(response_data, status=201)
-        return Response(serializer.errors, status=400)
+            return Response(response_data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(["POST"])
