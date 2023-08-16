@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "web_services",
     "rest_framework",
     "rest_framework.authtoken",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -58,6 +59,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "khoj_the_search.urls"
@@ -143,3 +145,5 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.TokenAuthentication",
     ]
 }
+
+CORS_ORIGIN_ALLOW_ALL = True

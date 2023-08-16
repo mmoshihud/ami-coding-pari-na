@@ -6,6 +6,7 @@ from rest_framework.response import Response
 from web_services.api.serializers import InputValueSerializer
 from web_services.api.serializers import UserSerializer
 from web_services.models import InputValue
+from rest_framework.authtoken.views import obtain_auth_token
 
 
 @api_view(["POST"])
