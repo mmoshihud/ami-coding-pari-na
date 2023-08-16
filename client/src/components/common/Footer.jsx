@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="mb-6">
             <h1 className="text-5xl font-bold">Ami Coding Pari Na</h1>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase">
                 Resources
@@ -76,13 +76,13 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+          <div className="mt-4 flex space-x-5 sm:mt-0 sm:justify-center">
             <a
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
-                className="w-4 h-4"
+                className="h-4 w-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -101,7 +101,7 @@ const Footer = () => {
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
-                className="w-4 h-4"
+                className="h-4 w-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -116,7 +116,7 @@ const Footer = () => {
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
-                className="w-4 h-4"
+                className="h-4 w-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -135,7 +135,7 @@ const Footer = () => {
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
-                className="w-4 h-4"
+                className="h-4 w-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -154,7 +154,7 @@ const Footer = () => {
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
-                className="w-4 h-4"
+                className="h-4 w-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
